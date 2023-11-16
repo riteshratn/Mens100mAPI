@@ -9,8 +9,6 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 app.use(router);
 
-//added this line for demo purpose
-
 app.listen(port, () => {
     console.log(`Connected to port ${port}`)
 })
