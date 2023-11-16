@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "b115e5c7-ca21-43b7-a12c-aa4b3b6929a6",
+		"name": "Men's 100m",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29795896"
+	},
+	"item": [
+		{
+			"name": "createMens",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"ranking\" : 5,\r\n            \"name\" : \"Fred KERLEY\",\r\n            \"dob\" : \"07 MAY 1995\",\r\n            \"country\" : \"USA\",\r\n            \"score\" : \"1397\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/mens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getmens",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getMen",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "updateMens",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"name\" : \"Fred KERLEY\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/mens/6555b0f0bab7fd4f0ad8891a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mens",
+						"6555b0f0bab7fd4f0ad8891a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteMens",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/mens/6555b0f0bab7fd4f0ad8891a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mens",
+						"6555b0f0bab7fd4f0ad8891a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
